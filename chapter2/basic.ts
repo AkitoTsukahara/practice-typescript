@@ -8,7 +8,7 @@ const binary: number = 0b0000;
 let octal: number = 0o123;
 
 // string型
-const color: string = 'white';
+let color0: string = 'white';
 const myColor: string = `my color is ${color}`
 
 // array型
