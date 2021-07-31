@@ -17,3 +17,20 @@ const bounds: Bounds = {
         return `${amount}`
     }
 }
+
+namespace Publisher {
+    export const name = ''
+    interface Appearance {
+        color: 'monochrome' | '4colors' | 'fullcolors'
+    }
+    export interface Book {
+        title: string
+        appearance: Appearance
+    }
+}
+namespace Publisher {
+    export interface CookingBook extends Book {
+        category: 'cooking'
+        appearance: Appearance // Error
+    }
+}
