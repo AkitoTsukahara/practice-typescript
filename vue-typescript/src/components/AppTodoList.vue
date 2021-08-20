@@ -7,16 +7,16 @@
 </template>
 
 <script lang="ts">
-import Vue from 'Vue'
+import { defineComponent } from "vue";
+
 import AppTodoItem, { Todo } from './AppTodoItem.vue'
 
 export type Data = {
     todos: Todo[]
 }
 
-export default Vue.extend({
+export default defineComponent({
     data: (): Data => ({
-
         todos: []
     }),
     componetns: {

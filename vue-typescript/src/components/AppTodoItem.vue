@@ -5,20 +5,20 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from 'vue'
+import { defineComponent,PropType } from 'vue'
 
 export type Todo = {
     id: string
     task: string
     done: boolean
 }
-export default Vue.extend({
+export default defineComponent({
     props: {
         todo: Object as PropType<Todo>
     },
     computed: {
         myTask(): string {
-            return this.todo.task
+            return this?.todo?.task?
         }
     }
 })
