@@ -8,7 +8,6 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-
 import AppTodoItem, { Todo } from './AppTodoItem.vue'
 
 export type Data = {
